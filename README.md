@@ -1,2 +1,2 @@
-# tconnect
-App bán máy tính
+# tconnectapp
+App bán hàng T Connect
