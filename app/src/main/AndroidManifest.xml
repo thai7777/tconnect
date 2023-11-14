@@ -99,5 +99,4 @@
             android:name=".ThanhToanActivity"
             android:exported="false" />
     </application>
-
 </manifest>

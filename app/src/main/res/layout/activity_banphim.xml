@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#f2f2f2"
     android:orientation="vertical"
-    tools:context=".ManhinhActivity">
+    tools:context=".BanphimActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,256 +51,19 @@
                 android:layout_toRightOf="@id/locsp1"
                 android:drawableLeft="@drawable/baseline_keyboard_arrow_down_24"></TextView>
         </RelativeLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/layout_manhinh"
-            android:orientation="vertical">
-            <ScrollView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/layout_manhinh"
+                android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <RelativeLayout
-                            android:id="@+id/sp1"
-                            android:layout_width="190dp"
-                            android:layout_height="280dp"
-                            android:background="#fff"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="15dp">
-                            <ImageView
-                                android:id="@+id/anhbp1"
-                                android:layout_width="match_parent"
-                                android:layout_height="220dp"
-                                android:background="@drawable/bp1">
-                            </ImageView>
-                            <TextView
-                                android:id="@+id/tenbp1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/anhbp1"
-                                android:layout_marginLeft="8dp"
-                                android:text="BÀN PHÍM LECOO"
-                                android:textSize="15sp"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Large">
-                            </TextView>
-                            <TextView
-                                android:id="@+id/giabp1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tenbp1"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="5dp"
-                                android:text="1.399.000 VNĐ"
-                                android:textColor="@color/black">
-                            </TextView>
-                        </RelativeLayout>
-                        <RelativeLayout
-                            android:id="@+id/sp2"
-                            android:layout_width="190dp"
-                            android:layout_height="280dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginTop="15dp"
-                            android:background="#fff"
-                            android:layout_toRightOf="@id/sp1">
-                            <ImageView
-                                android:id="@+id/anhbp2"
-                                android:layout_width="match_parent"
-                                android:layout_height="220dp"
-                                android:background="@drawable/bp2">
-                            </ImageView>
-                            <TextView
-                                android:id="@+id/tenbp2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/anhbp2"
-                                android:layout_marginLeft="8dp"
-                                android:text="BÀN PHÍM ASUS"
-                                android:textSize="15sp"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Large">
-                            </TextView>
-                            <TextView
-                                android:id="@+id/giabp2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tenbp2"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="5dp"
-                                android:text="1.700.000 VNĐ"
-                                android:textColor="@color/black">
-                            </TextView>
-                        </RelativeLayout>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <RelativeLayout
-                            android:id="@+id/sp3"
-                            android:layout_width="190dp"
-                            android:layout_height="280dp"
-                            android:background="#fff"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp">
-                            <ImageView
-                                android:id="@+id/anhbp3"
-                                android:layout_width="match_parent"
-                                android:layout_height="220dp"
-                                android:background="@drawable/bp3">
-                            </ImageView>
-                            <TextView
-                                android:id="@+id/tenbp3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/anhbp3"
-                                android:layout_marginLeft="8dp"
-                                android:text="BÀN PHÍM ZIFIEND"
-                                android:textSize="15sp"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Large">
-                            </TextView>
-                            <TextView
-                                android:id="@+id/giabp3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tenbp3"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="5dp"
-                                android:text="1.500.000 VNĐ"
-                                android:textColor="@color/black">
-                            </TextView>
-                        </RelativeLayout>
-                        <RelativeLayout
-                            android:id="@+id/sp4"
-                            android:layout_width="190dp"
-                            android:layout_height="280dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginTop="10dp"
-                            android:background="#fff"
-                            android:layout_toRightOf="@id/sp3">
-                            <ImageView
-                                android:id="@+id/anhbp4"
-                                android:layout_width="match_parent"
-                                android:layout_height="220dp"
-                                android:background="@drawable/bp6">
-                            </ImageView>
-                            <TextView
-                                android:id="@+id/tenbp4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/anhbp4"
-                                android:layout_marginLeft="8dp"
-                                android:text="BÀN PHÍM LOGTEC"
-                                android:textSize="15sp"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Large">
-                            </TextView>
-                            <TextView
-                                android:id="@+id/giabp4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tenbp4"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="5dp"
-                                android:text="999.000 VNĐ"
-                                android:textColor="@color/black">
-
-                            </TextView>
-                        </RelativeLayout>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <RelativeLayout
-                            android:id="@+id/sp5"
-                            android:layout_width="190dp"
-                            android:layout_height="280dp"
-                            android:background="#fff"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp">
-                            <ImageView
-                                android:id="@+id/anhbp5"
-                                android:layout_width="match_parent"
-                                android:layout_height="220dp"
-                                android:background="@drawable/bp4">
-                            </ImageView>
-                            <TextView
-                                android:id="@+id/tenbp5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/anhbp5"
-                                android:layout_marginLeft="8dp"
-                                android:text="BÀN PHÍM RAPOO"
-                                android:textSize="15sp"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Large">
-                            </TextView>
-                            <TextView
-                                android:id="@+id/giabp5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tenbp5"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="5dp"
-                                android:text="2.000.000 VNĐ"
-                                android:textColor="@color/black">
-                            </TextView>
-                        </RelativeLayout>
-                        <RelativeLayout
-                            android:id="@+id/sp6"
-                            android:layout_width="190dp"
-                            android:layout_height="280dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginTop="10dp"
-                            android:background="#fff"
-                            android:layout_toRightOf="@id/sp5">
-                            <ImageView
-                                android:id="@+id/anhbp6"
-                                android:layout_width="match_parent"
-                                android:layout_height="220dp"
-                                android:background="@drawable/bp5">
-                            </ImageView>
-
-                            <TextView
-                                android:id="@+id/tenbp6"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/anhbp6"
-                                android:layout_marginLeft="8dp"
-                                android:text="BÀN PHÍM NEMEN"
-                                android:textSize="15sp"
-                                android:textAlignment="center"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Large">
-                            </TextView>
-                            <TextView
-                                android:id="@+id/giabp6"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/tenbp6"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="5dp"
-                                android:text="1.650.000 VNĐ"
-                                android:textColor="@color/black">
-                            </TextView>
-                        </RelativeLayout>
-                    </LinearLayout>
-                </LinearLayout>
-            </ScrollView>
-        </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/banphim_Rec"
+                    android:layout_margin="5dp">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
         <LinearLayout
             android:id="@+id/footer"
             android:layout_marginTop="2dp"
